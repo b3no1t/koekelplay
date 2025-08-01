@@ -13,12 +13,17 @@
   "license": "ISC",
   "author": "Benoit Lepage",
   "type": "commonjs",
-  "main": "index.js",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite", // start dev server, aliases: `vite dev`, `vite serve`
+    "build": "vite build", // build for production
+    "preview": "vite preview" // locally preview production build
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "vite": "^7.0.6"
   }
 }
