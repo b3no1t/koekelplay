@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --k-primary: oklch(0.6797 0 0);
+  --k-secondary: oklch(0.6667 0.2208 21.47);
+  --k-tertiary: oklch(0.3878 0.0074 240);
+  --k-quaternary: oklch(0.5814 0.2375 27.86);
+  --k-quinary: oklch(0.7522 0.132964 215.1234);
+}
