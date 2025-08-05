@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@layer theme, base, components, utilities;
+@import "./theme.css" layer(theme);
+@import "./preflight.css" layer(base);
+@import "./utilities.css" layer(utilities);
 
 @theme {
   --k-primary: oklch(0.6797 0 0);
@@ -6,4 +10,18 @@
   --k-tertiary: oklch(0.3878 0.0074 240);
   --k-quaternary: oklch(0.5814 0.2375 27.86);
   --k-quinary: oklch(0.7522 0.132964 215.1234);
+}
+
+
+@layer components {
+ .bg-facebook,
+ .bg-instagram{
+  color: white;
+ }
+ .bg-facebook{
+  background-color: #3B5998;
+ }
+ .bg-instagram{
+  background-color: #DD2A7B;
+ }
 }
